@@ -10,7 +10,7 @@ Fusion Labs is an AI-first development environment. The Gemini agent is equipped
 
 The agent environment is organized as follows:
 
-- **`mcp_config.json`** - Definitions for external tool integrations.
+- **`settings.json`** - Definitions for external tool integrations and agent preferences.
 - **`skills/`** - Domain-specific expert guidance and workflows.
 - **`antigravity/`** - Advanced context tracking and session history.
 

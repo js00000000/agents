@@ -20,4 +20,4 @@ This project is a centralized repository for AI-assisted development configurati
 Before any commit, the agent MUST:
 - Run `git diff` to review all changes.
 - Scan for patterns like `sk-`, `sb_`, `SECRET`, `PASSWORD`.
-- Verify that `mcp_config.json` and `settings.json` remain in `.gitignore`.
+- Verify that `settings.json` remains in `.gitignore`.
