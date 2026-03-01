@@ -1,0 +1,89 @@
+{
+    "mcpServers": {
+        "context7": {
+            "httpUrl": "https://mcp.context7.com/mcp",
+            "description": "Live documentation lookup"
+        },
+        "firecrawl": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "firecrawl-mcp"
+            ],
+            "env": {
+                "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY_HERE"
+            },
+            "description": "Web scraping and crawling"
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "description": "Chain-of-thought reasoning"
+        },
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/path/to/your/project/root"
+            ],
+            "description": "Filesystem operations (set your path)"
+        },
+        "magic": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@magicuidesign/mcp@latest"
+            ],
+            "description": "Magic UI components"
+        },
+        "github": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+            },
+            "description": "GitHub operations - PRs, issues, repos"
+        },
+        "supabase": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@supabase/mcp-server-supabase"
+            ],
+            "env": {
+                "SUPABASE_URL": "https://your-project.supabase.co",
+                "SUPABASE_ACCESS_TOKEN": "YOUR_SUPABASE_ACCESS_TOKEN_HERE"
+            },
+            "description": "Supabase database operations"
+        },
+        "postgres": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+            ],
+            "description": "PostgreSQL database operations"
+        },
+        "redis": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-redis"
+            ],
+            "env": {
+                "REDIS_HOST": "localhost",
+                "REDIS_PORT": "6379",
+                "REDIS_DB": "0",
+                "REDIS_PASSWORD": "YOUR_REDIS_PASSWORD_HERE"
+            },
+            "description": "Redis MCP server running via uvx"
+        }
+    }
+}

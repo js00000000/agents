@@ -1,0 +1,22 @@
+# Secrets and Personal Identifiers
+mcp_config.json
+settings.json
+oauth_creds.json
+google_accounts.json
+projects.json
+user_id
+*.token
+*.key
+trustedFolders.json
+
+# Private User Data & Sessions
+antigravity/
+antigravity-browser-profile/
+history/
+tmp/
+state.json
+extensions/extension-enablement.json
+
+# Logs and temporary files
+*.log
+.DS_Store
